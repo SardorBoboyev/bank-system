@@ -1,17 +1,21 @@
-package uz.pdp.dto.request;
+package uz.pdp.request;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.time.LocalDate;
 import java.util.UUID;
 
-@AllArgsConstructor
-@NoArgsConstructor
 @Getter
 @Setter
-@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class DepositRequest {
     private UUID depositTypeId;
+
     private UUID customerId;
+
     private LocalDate date;
 }

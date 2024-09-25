@@ -1,19 +1,22 @@
-package uz.pdp.dto.request;
+package uz.pdp.response;
 
 import lombok.*;
+
+import java.time.LocalDateTime;
 
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
 @Builder
-public class CustomerRequest {
+public class CustomerResponse {
+    private String id;
+    private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
     private String firstName;
     private String lastName;
     private String phoneNumber;
     private String email;
-    private String secret;
     private String passport;
     private String picture;
 }
-

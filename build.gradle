@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'uz.pdp'
-version = '1.0.3'
+version = '1.0.4'
 
 java {
     toolchain {
@@ -37,7 +37,7 @@ publishing {
                     developer {
                         id = 'SardorBoboyev'
                         name = 'Sardor Boboyev '
-                        email = 'jamshidbekarimov@gmail.com'
+                        email = 'boboyevSardor350@gmail.com'
                     }
                 }
                 scm {
@@ -62,6 +62,7 @@ publishing {
 
 dependencies {
     compileOnly 'org.projectlombok:lombok:1.18.30'
+    implementation 'javax.validation:validation-api:2.0.1.Final'
 
     annotationProcessor 'org.projectlombok:lombok:1.18.30'
 

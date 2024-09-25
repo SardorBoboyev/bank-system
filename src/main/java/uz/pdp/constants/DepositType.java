@@ -1,4 +1,4 @@
-package uz.pdp.enumerators;
+package uz.pdp.constants;
 
 public enum DepositType {
     ANY,
